@@ -1,3 +1,53 @@
-* {
+@media (max-width: 568px) {
+  .pimg1, .pimg2, .pimg3 {
+    background-attachment: scroll; } }
+
+body {
   margin: 0;
-  padding: 0; }
+  height: 100%;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #616161; }
+  body .pimg1 {
+    background-image: url("../img/pic1.jpg");
+    min-height: 100vh; }
+  body .pimg2 {
+    background-image: url("../img/pic4.png");
+    min-height: 50vh; }
+  body .pimg3 {
+    background-image: url("../img/pic3.jpg");
+    min-height: 50vh; }
+  body .pimg1, body .pimg2, body .pimg3 {
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; }
+  body .section {
+    text-align: center;
+    padding: 50px 80px; }
+  body .section-light {
+    background-color: white;
+    color: #444; }
+  body .section-dark {
+    background-color: #3c3c3c;
+    color: #efefef; }
+  body .ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 8px; }
+    body .ptext .border {
+      background-color: #3c3c3c;
+      color: #efefef;
+      padding: 1.3rem; }
+    body .ptext .trans {
+      background: transparent;
+      text-shadow: 2px 3px 8px #000; }

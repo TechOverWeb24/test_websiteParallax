@@ -1,7 +1,80 @@
-$background-color: #ddd;
-$text-color: #222;
+$primary-bg: #888;
+$secondary-bg: #efefef;
+$font-stack:  Arial,Helvetica,sans-serif;
+$text-shadow: 2px 3px 8px #000;
 
-*{
+@import 'queries';
+
+body{
     margin: 0;
-    padding: 0;
+    height: 100%;
+    font-size: 1rem;
+    font-family: $font-stack;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #616161;
+    .pimg1{
+        background-image: url('../img/pic1.jpg');
+        min-height: 100vh;
+    }
+    .pimg2{
+        background-image: url('../img/pic4.png');
+        min-height: 50vh;
+    }
+    .pimg3{
+        background-image: url('../img/pic3.jpg');
+        min-height:50vh;
+    }
+
+    .pimg1, .pimg2, .pimg3{
+        position: relative;
+        opacity: 0.70;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        // fixed = parallax
+        // scroll = normal
+
+        background-attachment: fixed;
+        
+    }
+    .section{
+        text-align: center;
+        padding: 50px 80px;
+
+    }
+    .section-light{
+        background-color: lighten($secondary-bg, 9);
+        color: #444; 
+    }
+
+    .section-dark{
+        background-color: darken($primary-bg, 30);
+        color: $secondary-bg; 
+    }
+    .ptext{
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        color: darken($primary-bg, 90);
+        font-size: 2rem;
+        text-transform: uppercase;
+        letter-spacing:8px; 
+        .border{
+            background-color:darken($primary-bg, 30);
+            color:  $secondary-bg;
+            padding:1.3rem;
+        }
+        .trans{
+            background: transparent;
+            text-shadow: $text-shadow;
+            
+        }
+         
+    }
+   
+
+
 }
