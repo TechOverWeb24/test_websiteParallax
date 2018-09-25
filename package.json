@@ -1,0 +1,25 @@
+{
+  "name": "parallax_site",
+  "version": "1.0.0",
+  "description": "website using css parallax ",
+  "main": "dist/index.html",
+  "dependencies": {
+    "firebase-tools": "^4.2.1",
+    "node-sass": "^4.9.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "www.github.com/prince601/parallax_site"
+  },
+  "keywords": [
+    "parallax",
+    "css",
+    "scss"
+  ],
+  "author": "prince kab",
+  "license": "MIT"
+}
